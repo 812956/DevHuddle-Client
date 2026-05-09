@@ -22,7 +22,7 @@ export default function PostSettingsModal({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-[60] p-4 bg-black/20">
+    <div className="fixed inset-0 flex items-center justify-center z-[10000] p-4 bg-black/20">
       <div className="bg-white rounded-2xl shadow-2xl w-full max-w-[400px]">
         <div className="flex items-center justify-between p-6 border-b border-slate-200">
           <h2 className="text-lg font-semibold text-slate-800">Post Settings</h2>

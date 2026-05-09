@@ -17,8 +17,9 @@ export default function EditorModal({
   IconButtonAction,
 }: EditorModalProps) {
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-2xl shadow-2xl w-full max-w-[900px] max-h-[85vh] overflow-hidden">
+    <div className="fixed inset-0 flex items-center justify-center z-[10000] p-4">
+      <div className="absolute inset-0 bg-[#000000aa]" onClick={IconButtonAction} />
+      <div className="bg-white rounded-2xl shadow-2xl w-full max-w-[900px] max-h-[85vh] overflow-hidden relative z-10">
         <div className="flex items-center justify-between p-6 border-b border-slate-200">
           <h2 className="text-xl font-semibold text-slate-800">{title}</h2>
           <IconButton

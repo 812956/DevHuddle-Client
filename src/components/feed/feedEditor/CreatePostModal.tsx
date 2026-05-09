@@ -219,7 +219,7 @@ export default function CreatePostModal({
 
   return (
     <>
-      <div className="fixed inset-0 bg-[#000000aa] flex items-center justify-center z-50 p-4">
+      <div className="fixed inset-0 bg-[#000000aa] flex items-center justify-center z-[9999] p-4">
         <div className="bg-white rounded-2xl shadow-2xl w-full max-w-[600px] max-h-[90vh] overflow-hidden flex flex-col">
           {/* Header */}
           <div className="flex items-center justify-between p-6 border-b border-gray-200">
@@ -347,7 +347,7 @@ export default function CreatePostModal({
                   <Smile size={20} className="text-gray-600" />
                 </button>
                 {showEmojiPicker && (
-                  <div className="absolute bottom-full left-0 z-50 mb-2 shadow-xl rounded-xl overflow-hidden">
+                  <div className="absolute bottom-full left-0 z-[10000] mb-2 shadow-xl rounded-xl overflow-hidden">
                     <EmojiPicker
                       onEmojiClick={(emojiData) => {
                         setContent((prev) => prev + emojiData.emoji);
@@ -430,7 +430,7 @@ export default function CreatePostModal({
       )}
 
       {showSuccess && (
-        <div className="fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-70 flex items-center space-x-2">
+        <div className="fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-[10000] flex items-center space-x-2">
           <span>✓ Post shared successfully!</span>
         </div>
       )}
